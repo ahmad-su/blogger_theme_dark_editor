@@ -1,0 +1,21 @@
+{
+  "name": "Blogger Theme Dark Editor",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Add dark theme to blogger theme editor",
+  "action": { "default_popup": "./popup/popup.html" },
+  "content_scripts": [
+    {
+      "js": ["./scripts/content.js"],
+      "matches": ["https://draft.blogger.com/blog/themes/edit/*"]
+    }
+  ],
+  "permissions": ["activeTab", "storage"],
+  "icons": {
+    "16":"./icons/btde-16.png",
+    "32":"./icons/btde-32.png",
+    "48":"./icons/btde-48.png",
+    "64":"./icons/btde-64.png",
+    "128":"./icons/btde-128.png"
+  }
+}

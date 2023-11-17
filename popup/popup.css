@@ -1,0 +1,101 @@
+:root {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 16px;
+  --background: #282a36;
+  --current_line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+.flex-h {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body {
+  width: 248px;
+  padding: 0.25rem 0.5rem;
+}
+body:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(30deg, var(--purple) 0% 12.5% , var(--pink) 12.5% 25%, var(--red) 25% 37.5%, var(--orange) 37.5% 50%, var(--yellow) 50% 62.5%, var(--green) 62.5% 75%, var(--cyan) 75% 87.5%, var(--comment) 87.5% 100%); */
+  background: linear-gradient(
+    30deg,
+    var(--background) 0% 1%,
+    var(--purple) 2% 12.5%,
+    var(--pink) 12.5% 25%,
+    var(--red) 25% 37.5%,
+    var(--orange) 37.5% 50%,
+    var(--yellow) 50% 62.5%,
+    var(--green) 62.5% 75%,
+    var(--cyan) 75% 87.5%,
+    var(--comment) 87.5% 100%
+  );
+  width: 100%;
+  height: 3px;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+/* Style for the container (label) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 24px;
+}
+
+/* Hide the default checkbox input */
+.switch input {
+  display: none;
+}
+
+/* Style for the slider (the toggle button) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* Style for the slider when it's checked (on) */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Style for the slider when the input is checked */
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+/* Style for the slider before when the input is checked */
+input:checked + .slider:before {
+  transform: translateX(28px);
+}

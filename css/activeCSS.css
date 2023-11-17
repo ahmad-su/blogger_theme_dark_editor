@@ -1,0 +1,110 @@
+/*Dracula Theme*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap");
+
+:root {
+  background-color: var(--background);
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 300;
+  --background: #282a36;
+  --current_line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+
+header {
+  background-color: var(--background) !important;
+  border-bottom: 1px solid #222 !important;
+}
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+  background-color: var(--background) !important;
+  font-family: "Fira Code", monospace;
+}
+.CodeMirror-gutters {
+  background-color: var(--background) !important;
+  border-right: 1px solid #222 !important;
+}
+.CodeMirror-lines {
+  background-color: var(--background);
+  color: var(--yellow);
+}
+.CodeMirror-line {
+  padding: 1px 8px !important;
+  max-width: calc(1rem * 50);
+}
+.CodeMirror-cursor {
+  border-left: 1px solid #eee !important;
+  width: 0.5rem !important;
+  background-color: rgba(200, 200, 200, 0.5) !important;
+}
+.CodeMirror-linenumber {
+}
+.CodeMirror-foldgutter {
+}
+.CodeMirror-foldgutter-open:after {
+}
+.cm-s-default .cm-meta,
+.cm-s-default .cm-qualifier {
+  color: var(--foreground) !important;
+}
+.cm-tag {
+  color: var(--purple) !important;
+  font-weight: 600;
+}
+.cm-attribute {
+  color: var(--red) !important;
+  font-weight: 400;
+}
+.cm-string {
+  color: var(--green) !important;
+  font-weight: 300;
+}
+.cm-comment {
+  color: var(--orange) !important;
+  font-weight: 300;
+}
+.cm-atom {
+  color: var(--pink) !important;
+  font-weight: 300;
+}
+.fKz7Od {
+  color: var(--current_line) !important;
+}
+.fkIfyc,
+.L3ijne {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  border-bottom: 1px solid #222;
+}
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
